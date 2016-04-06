@@ -8,14 +8,14 @@ namespace WebApp
 {
     public class Startup
     {
-       
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("commsportal:alerts:read", new AuthorizationPolicy(new IAuthorizationRequirement[]
+                options.AddPolicy("myscope", new AuthorizationPolicy(new IAuthorizationRequirement[]
                 {
-                    new ClaimsAuthorizationRequirement("Scope", new[] {"commsportal:alerts:read"}),
+                    new ClaimsAuthorizationRequirement("Scope", new[] {"myscope"}),
                     new DenyAnonymousAuthorizationRequirement(),
                 }, new[] {"Bearer"}));
             });

@@ -11,11 +11,10 @@ namespace WebApp
     public class TestController : Controller
     {
         [HttpGet("thing", Name = "GetThing")]
-        [Authorize("commsportal:alerts:read")]
+        [Authorize("myscope")]
         public IActionResult Thing()
         {
             return new OkResult();
         }
     }
 }
-
