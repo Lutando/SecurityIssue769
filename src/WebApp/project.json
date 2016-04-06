@@ -1,0 +1,62 @@
+﻿{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Hosting": "1.0.0-*",
+    "Microsoft.AspNetCore.IISPlatformHandler": "1.0.0-*",
+    "Microsoft.AspNetCore.Mvc": "1.0.0-*",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+    "Microsoft.Extensions.Logging.Console": "1.0.0-*",
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
+    "Microsoft.Extensions.Logging": "1.0.0-*",
+    "Microsoft.Extensions.Logging.Abstractions": "1.0.0-*",
+    "Microsoft.AspNetCore.Authorization": "1.0.0-*",
+    "Microsoft.AspNetCore.Authentication.JwtBearer": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-*",
+    "Microsoft.NETCore.Platforms": "1.0.1-*"
+  },
+
+  "commands": {
+    "web": "WebApp"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "System.Runtime": "4.0.0",
+        "System.Collections": "4.0.0",
+        "System.Runtime.Extensions": "4.0.0",
+        "System.Linq": "4.0.0",
+        "System.IO": "4.0.0",
+        "System.ComponentModel": "4.0.0",
+        "System.Threading.Tasks": "4.0.0",
+        "System.Text.Encoding": "4.0.0",
+        "System.Runtime.InteropServices": "4.0.0"
+      },
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.0.0",
+        "System.Diagnostics.Debug": "4.0.0.0",
+        "System.Collections": "4.0.0.0",
+        "System.Runtime.InteropServices": "4.0.0.0",
+        "System.Runtime.Extensions": "4.0.0.0",
+        "System.ComponentModel": "4.0.0.0",
+        "System.Threading.Tasks": "4.0.0.0",
+        "System.IO": "4.0.0.0",
+        "System.Text.Encoding": "4.0.0.0",
+        "System.Linq": "4.0.0.0"
+      }
+    }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}
